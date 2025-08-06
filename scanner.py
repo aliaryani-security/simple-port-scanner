@@ -18,4 +18,6 @@ for i in range (1,1000):
 
 end_time = time.time()
 total_time = end_time - start_time
-print ("Total time: {}".format(total_time))
+total_minutes = int (total_time / 60)
+remaining_secs = int (total_time % 60)
+print ("Total time: {} minutes and {} seconds".format(total_minutes,remaining_secs))
