@@ -15,3 +15,7 @@ for i in range (1,1000):
     if conn == 0:
         print (f"[+] Port {i} open")
     scanner.close()
+
+end_time = time.time()
+total_time = end_time - start_time
+print ("Total time: {}".format(total_time))
